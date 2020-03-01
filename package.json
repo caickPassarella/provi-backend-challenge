@@ -1,0 +1,24 @@
+{
+  "name": "provi-backend-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caick1000/provi-backend-challenge.git"
+  },
+  "author": "Caick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caick1000/provi-backend-challenge/issues"
+  },
+  "homepage": "https://github.com/Caick1000/provi-backend-challenge#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "nodemon": "^2.0.2"
+  }
+}
