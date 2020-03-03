@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const config = require('./config');
-const registerRouter = require('./routes/register');
+const userRouter = require('./routes/register');
 const infoRouter = require('./routes/info');
 const { handleError } = require('./middlewares/errorHandler');
 
@@ -31,7 +31,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(handleError);
-app.use('/register', registerRouter);
+app.use('/', userRouter);
 app.use('/info', infoRouter);
 
 app.listen(PORT, () => {
